@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+	agent {label 'jenkins-docker-slave'}
     environment {
         AWS_ACCOUNT_ID="CHANGE_ME"
         AWS_DEFAULT_REGION="CHANGE_ME" 
