@@ -1,14 +1,14 @@
 {
-    "family": FAMILY,
+    "family": simple-fargate,
     "containerDefinitions": [
         {
-            "image": "REPOSITORY_URI:BUILD_NUMBER",
-            "name": NAME,
+            "image": "226127612063.dkr.ecr.us-east-1.amazonaws.com/jenkins:nodejs",
+            "name": fargate-app,
 	    "essential": true,
             "portMappings": [
                 {
                     "containerPort": 3000,
-                    "hostPort": 3000
+                    "hostPort": 80
                 }
             ]
         }
